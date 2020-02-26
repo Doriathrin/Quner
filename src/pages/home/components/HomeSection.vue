@@ -1,7 +1,7 @@
 <template>
   <div class="home-section">
     <section>
-      
+      这是swiper的分支
     </section>
   </div>
 </template>
