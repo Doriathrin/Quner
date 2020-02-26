@@ -1,6 +1,8 @@
 <template>
   <div class="home-section">
-    <section></section>
+    <section>
+      这是swiper
+    </section>
   </div>
 </template>
 
