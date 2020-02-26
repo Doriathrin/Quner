@@ -1,7 +1,7 @@
 <template>
   <div class="home-section">
     <section>
-      
+      123
     </section>
   </div>
 </template>
