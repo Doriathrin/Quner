@@ -1,19 +1,16 @@
 <template>
   <div class="home-section">
     <section>
-      <div class='lwq-banner'>
-        <swiper :options="swiperOption">
+      <div class='lwq-banner' v-for='item of swiperList' @key='item.id'>
+        <swiper :options="swiperOption" >
           <!-- slides -->
           <swiper-slide>
-            <img class="swiper-img" src="http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201912/0b26e9760c2673c63c05e1efce1275ea.jpg_750x200_495c0a72.jpg" >
+            <img class="swiper-img" :src="item.imgUrl" >
           </swiper-slide>
           <swiper-slide>
-            <img class="swiper-img" src="http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201912/0b26e9760c2673c63c05e1efce1275ea.jpg_750x200_495c0a72.jpg" >
+            <img class="swiper-img" :src="item.imgUrl" >
           </swiper-slide>
-            
-          <!-- Optional controls -->
           <div class="swiper-pagination"  slot="pagination"></div>
-          
         </swiper>
         <div>test</div>
       </div>
@@ -26,7 +23,14 @@ export default {
   name: 'HomeSection',
   data() { 
     return {
-       swiperOption:{}
+       swiperOption:{},
+       swiperList:[{
+        id:"0001",
+        imgUrl:"http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201912/0b26e9760c2673c63c05e1efce1275ea.jpg_750x200_495c0a72.jpg"
+      },{
+        id:"0002",
+        imgUrl:"http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201912/0b26e9760c2673c63c05e1efce1275ea.jpg_750x200_495c0a72.jpg"
+      }]
     }
   },
   methods: {
