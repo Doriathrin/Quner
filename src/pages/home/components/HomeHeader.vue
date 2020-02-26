@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import '../../../assets/styles/varibles.styl';
+@import '~styles/varibles.styl'; 
 .home-header
   width:4.8rem;
   height:0.56rem;
