@@ -9,7 +9,6 @@
           <p class="icon-desc">{{item.desc}}</p>
         </div>
       </swiper-slide>
-      
     </swiper>
   </div>
 </template>
