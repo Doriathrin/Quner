@@ -4,15 +4,16 @@
       周末去那儿
     </div>
     <ul>
-      <li class='item border-bottom' v-for='(item,key) of recommendList' :key='item.id'>
-        <img :src="item.imgUrl" class='item-img' alt="">
-        <div class="item-info">
-          <p class="item-title">{{ item.title }}</p>
-          <p class="item-desc">{{ item.desc }}</p>
-          <button class="item-button">查看详情</button>
-        </div>
-      </li>
-    </ul>
+		<li class="item border-bottom" v-for="item of weekendList" :key="item.id">               
+			<div class="item-img-wrapper">
+				 <img class="item-img"  :src="item.imgUrl" />  
+			</div>           
+			<div class="item-info"> 
+				<p class="item-title">{{ item.title }}</p>
+				<p class="item-desc">{{ item.desc }}</p>
+			</div>               
+		</li>
+	</ul>
   </div>
 </template>
 
@@ -21,36 +22,36 @@ export default {
   name: 'Recommend',
   data() { 
     return {
-      recommendList:[
+      weekendList:[
         {
           id:"0001",
-          imgUrl:"http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_200x200_2458ffb2.jpg",
-          title:"八达岭长城",
-          desc:"中国第一长城,中国人一生至少要来一次长城，感受长城没来所在，感受古代文化遗产的伟大"
+          imgUrl:"http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg",
+          title:"京都周末狂欢",
+          desc:"在帝都过周末，不仅仅是城中游！"
         },
         {
           id:"0002",
-          imgUrl:"http://img1.qunarzz.com/sight/p0/1603/85/85c883189bf7293390.water.jpg_200x200_3165123d.jpg",
-          title:"什刹海",
-          desc:"北京的街道就是在市区的人群集结地，在这里有四合院有三轮车有小吃店还有外地的热心游客，因为人们为了体会京城的生活而来，所以想看的是北京老百姓的街道。"
+          imgUrl:"http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+          title:"京都有好泉水",
+          desc:"细数北京温泉，温暖你的冬天"
         },
         {
           id:"0003",
-          imgUrl:"http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_200x200_2458ffb2.jpg",
-          title:"北京野生动物园",
-          desc:"很大，开车逛了一圈后又步行逛了一圈，小朋友一直想看看长颈鹿，因为天冷关起来了，没看到。看到了网红的老虎，狮子，狗兄一家子，但没看到狗妈妈。一袋小油菜，胡萝卜等叶菜要30元🙀不过小朋友喂鹿很开心！不过建议大家还是别冬天去，少见不少！"
+          imgUrl:"http://img1.qunarzz.com/sight/source/1811/7e/476589267ebb41.jpg_r_640x214_bf599709.jpg",
+          title:"京城溜娃必去",
+          desc:"德智体美劳全面发展的亲子日，这些地方该去看看...。"
         },
         {
           id:"0004",
-          imgUrl:"http://img1.qunarzz.com/sight/p0/1607/ce/ce94534274b3bd6db4.water.jpg_200x200_91a2f180.jpg",
-          title:"清华大学",
-          desc:"自由发挥。行程安排合理，导游讲解专业，微笑服务。司机师傅技术好，待人和气，游玩八达岭长城，颐和园，还路过了清华大学一路玩得开心，这次旅游真的使我开心快乐。"
+          imgUrl:"http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
+          title:"京城溜娃必去",
+          desc:"德智体美劳全面发展的亲子日，这些地方该去看看...。"
         },
         {
           id:"0005",
-          imgUrl:"http://img1.qunarzz.com/sight/p0/1602/92/920e47352552c1c990.water.jpg_200x200_dba18b05.jpg",
-          title:"天坛公园",
-          desc:"北京天坛公园一个古树成林、古迹成片，北京这个景区深受各地游客的喜爱。既有古树，又有古建筑的天坛公园，是一个天然大氧吧。也是北京市民晨练的最佳去处……"
+          imgUrl:"http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
+          title:"京城溜娃必去",
+          desc:"德智体美劳全面发展的亲子日，这些地方该去看看..."
         }
       ]
     }
@@ -63,7 +64,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
- @import  "~styles/minxins.styl"
+//  @import  "~styles/minxins.styl"
   .title
     line-height: .8rem
     background: #eee
@@ -78,11 +79,12 @@ export default {
   .item-info
     padding: .1rem
     .item-title
-      line-height: .54rem
-      font-size: .32rem
+      // line-height: .54rem
+      font-size: .15rem
       ellipsis()
     .item-desc
       line-height: .4rem
       color: #ccc
+      font-size:.15rem
       ellipsis()
 </style>
