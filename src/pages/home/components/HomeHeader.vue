@@ -3,8 +3,13 @@
       <ul class='lwq-fen'>
         <li><p class='iconfont'>&#xeb99;</p></li>
         <li><input type="text" placeholder='输入城市/景点/游玩主题' /></li>
-        <li><span>{{city}}</span></li>
-        <li><i class='iconfont'>&#xe606;</i></li>
+        
+        <li>
+          <router-link to='/city'>
+            <span>{{city}}</span>
+            <i class='iconfont'>&#xe606;</i>
+          </router-link>
+        </li>
       </ul>
   </div>
 </template>
@@ -52,8 +57,7 @@ input
   height:0.4rem;
   border-radius:0.05rem; 
   font-size :0.18rem; 
-  color:red;
-  
-span
+span,i
   font-size:0.2rem; 
+  color:#fff
 </style>
