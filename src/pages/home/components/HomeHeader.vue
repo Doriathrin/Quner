@@ -3,7 +3,7 @@
       <ul class='lwq-fen'>
         <li><p class='iconfont'>&#xeb99;</p></li>
         <li><input type="text" placeholder='输入城市/景点/游玩主题' /></li>
-        <li><span>北京</span></li>
+        <li><span>{{city}}</span></li>
         <li><i class='iconfont'>&#xe606;</i></li>
       </ul>
   </div>
@@ -13,6 +13,9 @@
 
 export default {
   name: 'HomeHeader',
+  props:{
+    city:String
+  },
   data () {
     return {
 
