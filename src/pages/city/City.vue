@@ -2,8 +2,8 @@
   <div class="city">
      <CityHeader></CityHeader> 
      <CitySerch></CitySerch>
-     <CityList :cities='cities' :hotCities='hotCities'></CityList>
-     <CityAiphader :cities='cities'></CityAiphader>
+     <CityList :cities='cities' :hotCities='hotCities' :letter='letter'></CityList>
+     <CityAiphader :cities='cities' @change="handleLetterClick"></CityAiphader>
   </div>
 </template>
 
@@ -24,7 +24,8 @@ export default {
   data() { 
     return {
       cities:{},
-      hotCities:[]
+      hotCities:[],
+      letter:""
     }
   },
   methods: {
@@ -41,8 +42,11 @@ export default {
         this.cities=data.cities;
         this.hotCities=data.hotCities
       }
-      
-    }
+    },
+    handleLetterClick(data){
+      console.log(data);
+      this.letter=data
+    }  
   },
   mounted() {
     this.getCityInfo();
