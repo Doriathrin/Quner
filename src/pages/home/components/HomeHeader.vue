@@ -56,7 +56,7 @@ input
   width:3.43rem;
   height:0.4rem;
   border-radius:0.05rem; 
-  font-size :0.18rem; 
+  font-size :0.2rem; 
 span,i
   font-size:0.2rem; 
   color:#fff
