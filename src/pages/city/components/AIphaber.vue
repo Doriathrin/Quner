@@ -32,7 +32,7 @@ export default {
   right:0;
   bottom:0
   width:0.44rem;
-  background:red
+  // background:red
   .item
     line-height:0.4rem;
     text-align:center;
