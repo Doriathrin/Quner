@@ -2,7 +2,7 @@
   <div class="home-Swiper">
       <div class='lwq-banner' v-if='swiperList.length'>
         <swiper :options="swiperOption"> 
-          <swiper-slide v-for='item of swiperList'>
+          <swiper-slide v-for='(item,key) of swiperList' :key='key'>
             <img class="swiper-img" :src="item.imgUrl" >
           </swiper-slide>
           <div class="swiper-pagination"  slot="pagination"></div>
