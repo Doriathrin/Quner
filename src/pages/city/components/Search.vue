@@ -5,7 +5,7 @@
     </div>
     <div class="search-content" ref='search' v-show='keyword'>
       <ul>
-        <li class='search-item border-bottom' v-for='item of list' :key='item.id'>
+        <li class='search-item border-bottom' v-for='item of list' :key='item.id' @click="handleCityClick(item.name)">
           {{item.name}}
         </li>
         <li class='search-item border-bottom' v-show='hasNoData'>
@@ -36,7 +36,10 @@ export default {
     }
   },
   methods: {
-
+    handleCityClick(city){
+      this.$store.commit('changCtiyValue',city)
+      this.$router.push('/');
+    }
   },
   mounted() {
     // 搜索出来的内容实现滚动
