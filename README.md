@@ -48,11 +48,11 @@ this is Quner wang project
 3.  cnpm install stylus --save
 4.  cnpm install stylus-loader --save
 5.  cnpm install axios -s
-    (解决axios跨域问题)
-    cnpm install vue-resource -S
-    (1)、在main.js中引入
-    import vueResource from 'vue-resource'
-    Vue.use(vueResource)
+(解决axios跨域问题)
+cnpm install vue-resource -S
+(1)、在main.js中引入
+import vueResource from 'vue-resource'
+Vue.use(vueResource)
 6.  cnpm install better-scroll -S
 #### 使用说明
 
