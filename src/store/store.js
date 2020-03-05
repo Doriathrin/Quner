@@ -6,11 +6,16 @@ Vue.use(vuex);
 
 var store = new vuex.Store({
   state: index,
-  mutations: mutations
+  mutations: mutations,
   // actions: {
   //   chanCtiy (ctx, city) {//两个参数content 上下文  传过来的参数
   //     ctx.commit('changCtiyValue',city)
   //   }
   // }
+  getters: {
+    doubleCity (state) {
+      return state.city+'  '+state.city
+    }
+  }
 })
 export default store

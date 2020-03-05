@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import {mapState,mapMutations} from 'vuex'
 import BScroll from 'better-scroll' 
 export default {
   name: 'CitySearch',
@@ -37,9 +38,11 @@ export default {
   },
   methods: {
     handleCityClick(city){
-      this.$store.commit('changCtiyValue',city)
+      // this.$store.commit('changCtiyValue',city)
+      this.changCtiyValue(city);
       this.$router.push('/');
-    }
+    },
+    ...mapMutations(['changCtiyValue'])
   },
   mounted() {
     // 搜索出来的内容实现滚动

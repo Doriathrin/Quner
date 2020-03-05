@@ -3,23 +3,28 @@
       <ul class='lwq-fen'>
         <li><p class='iconfont'>&#xeb99;</p></li>
         <li><input type="text" placeholder='输入城市/景点/游玩主题' /></li>
-        
-        <li class='lwq-city'>
-          <router-link to='/city'>
-            <span>{{this.$store.state.city}}</span>
-            <i class='iconfont'>&#xe606;</i>
-          </router-link>
-        </li>
+        <router-link to='/city'>
+          <li class='lwq-city'>
+            <span>{{this.doubleCity}}</span>
+            <span class='iconfont arrow-icon' >
+              <img src="../../../assets/img/img.png" alt="">
+            </span>
+          </li>
+        </router-link>
       </ul>
   </div>
 </template>
 
 <script>
-
+import {mapState,mapGetters} from 'vuex'
 export default {
   name: 'HomeHeader',
   props:{
     city:String
+  },
+  computed: {
+    ...mapState(['city']),
+    ...mapGetters(['doubleCity'])
   },
   data () {
     return {
@@ -63,10 +68,15 @@ span,i
 a 
   margin-left:-0.1rem;
 .lwq-city
-  width:1rem;
+  min-width:1rem;
+  padding:0 0.15rem;
   height:0.56rem;
+  line-height:0.56rem;
+  float:right
   // background:red
-  line-height 0.56rem;
   text-align:center;
-  
+  .arrow-icon
+    
+    margin-left:-0.04rem;
+
 </style>
