@@ -31,20 +31,34 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 this is Quner wang project
 
 #### 软件架构
-软件架构说明
+
+1、Webpack-cli搭建项目
+2、Vue全家桶(vue+vuex+vue-router)
+3、CSS预处理器SCSS
+4、axios与后端进行请求数据
+5、使用better-scroll滚动
+6、Express搭建后端服务
+7、Mongoose对MongoDB进行便捷操作
 
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
+1.  cnpm install
+2.  cnpm install vuex -s
+3.  cnpm install stylus --save
+4.  cnpm install stylus-loader --save
+5.  cnpm install axios -s
+    (解决axios跨域问题)
+    cnpm install vue-resource -S
+    (1)、在main.js中引入
+    import vueResource from 'vue-resource'
+    Vue.use(vueResource)
+6.  cnpm install better-scroll -S
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  项目运行前一定要先下载好安装教程里面的东西
+2.  axios本人用的是全局路径在config文件中的index.js文件中的proxyTable: {},写入配置
+3.  本人所使用的是vue2.9.6版本
 
 #### 参与贡献
 
