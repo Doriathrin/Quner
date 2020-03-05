@@ -8,15 +8,20 @@ Software architecture description
 
 #### Installation
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  cnpm install
+2.  cnpm install vuex -s
+3.  cnpm install stylus --save
+4.  cnpm install stylus-loader --save
+5.  cnpm install axios -s
+6.  cnpm install vue-resource -S (解决axios跨域问题)
+7.  cnpm install better-scroll -S
 
 #### Instructions
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  项目运行前一定要先下载好安装教程里面的东西
+2.  axios本人用的是全局路径在config文件中的index.js文件中的proxyTable: {},写入配置
+3.  解决axios跨域问题在main.js当中查看
+4.  本人所使用的是vue2.9.6版本
 
 #### Contribution
 
