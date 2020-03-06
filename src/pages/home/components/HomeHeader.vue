@@ -7,7 +7,7 @@
           <li class='lwq-city'>
             <span>{{this.doubleCity}}</span>
             <span class='iconfont arrow-icon' >
-              <img src="../../../assets/img/img.png" alt="">
+              &#xe606;
             </span>
           </li>
         </router-link>
@@ -76,7 +76,6 @@ a
   // background:red
   text-align:center;
   .arrow-icon
-    
     margin-left:-0.04rem;
 
 </style>
