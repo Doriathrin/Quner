@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# quner
+# 去那儿APP项目
 
 > A Vue.js project
 
@@ -21,10 +19,7 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
-# Quner
->>>>>>> 8bea4aefafcb8b9051f7a90457e1f34ca417372c
-=======
+
 # Quner
 
 #### 介绍
