@@ -27,13 +27,13 @@ this is Quner wang project
 
 #### 软件架构
 
-1、Webpack-cli搭建项目
-2、Vue全家桶(vue+vuex+vue-router)
-3、CSS预处理器SCSS
-4、axios与后端进行请求数据
-5、使用better-scroll滚动
-6、Express搭建后端服务
-7、Mongoose对MongoDB进行便捷操作
+1.  Webpack-cli搭建项目
+2.  Vue全家桶(vue+vuex+vue-router)
+3.  CSS预处理器SCSS
+4.  axios与后端进行请求数据
+5.  使用better-scroll滚动
+6.  Express搭建后端服务
+7.  Mongoose对MongoDB进行便捷操作
 
 
 #### 安装教程
