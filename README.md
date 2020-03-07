@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # quner
 
 > A Vue.js project
@@ -74,3 +75,7 @@ this is Quner wang project
 5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
 6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
 >>>>>>> d3eee993e1582e379734f8bb4b6d2d9f003f2e0e
+=======
+# Quner
+去那儿APP项目
+>>>>>>> 570114b967000f8ade6ff40bee28b6a804ccfa7b
