@@ -13,8 +13,8 @@
           39
         </div>
       </div>
-      <CommonGallary :imgs='imgs' v-show='showGallary' @close='handleGallaryClose'></CommonGallary>
     </div>
+    <CommonGallary :imgs='imgs' v-show='showGallary' @close='handleGallaryClose'></CommonGallary>
   </div>
 </template>
 
@@ -37,11 +37,9 @@ export default {
   methods: {
     handldBannerClick(){
       this.showGallary=true;
-      alert(this.showGallary=true);
     },
     handleGallaryClose(){
       this.showGallary=false;
-      alert(this.showGallary=false)
     }
   },
  }
