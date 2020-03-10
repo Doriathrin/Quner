@@ -33,7 +33,7 @@ export default {
   },
   components:{
     CommonGallary,
-    FadeAnimation
+    FadeAnimation,
   },
   data() { 
     return {
@@ -45,12 +45,7 @@ export default {
     }
   },
   methods: {
-    handldBannerClick(){
-      this.showGallary=true;
-    },
-    handleGallaryClose(){
-      this.showGallary=false;
-    }
+     
   },
  }
 </script>

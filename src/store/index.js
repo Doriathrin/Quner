@@ -5,5 +5,5 @@ try {
   }
 } catch (e) { }
 export default {
-  city: defaultCity
+  city: defaultCity,
 }
