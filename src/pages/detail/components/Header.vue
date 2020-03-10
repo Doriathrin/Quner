@@ -30,15 +30,15 @@ export default {
       // pc:document.documentElement.scrollTop     移动端 :
       // console.log(document.documentElement.scrollTop );
       // console.log(document.body.scrollTop);
-      console.log('scroll');
-      const top=document.documentElement.scrollTop
+      console.log('scroll1111');
+      const top=document.documentElement.scrollTop ||document.body.scrollTop
       if (top > 60) {
         let opacity=top/140
         opacity=opacity>1 ? 1 : opacity
         this.opacityStyle={opacity}
         this.showAbs=false
       } else {
-        this.showAbs=true
+        this.showAbs=true;
       }
     }
   },
@@ -47,6 +47,7 @@ export default {
   },
   activated() {
     window.addEventListener('scroll',this.handleScroll)
+    console.log('activated');
   },
   // 对全局事件解绑 页面即将替换为新的页面的时候
   deactivated () {
@@ -70,6 +71,7 @@ export default {
     .header-abs-icon
       color:#ffffff;
   .header-fixed
+    z-index:2;
     position:fixed;
     top:0;
     left:0;
