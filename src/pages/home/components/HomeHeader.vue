@@ -43,7 +43,8 @@ export default {
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'; 
 .home-header
-  width:4.8rem;
+  // width:4.8rem;
+
   height:0.56rem;
   // border:0.01rem solid red;
   background :$bgColor;
