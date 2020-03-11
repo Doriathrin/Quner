@@ -8,13 +8,15 @@
     @touchstart='handleTouchStart'
     @touchmove='handleTouchmove'
     @touchend='handleTouchEnd'
+    @touchStatus.prevent='handleTouchStart'
     >
       {{item}}
     </li>
   </ul>
 </template>
 
-<script>
+<script> 
+
 export default {
   name: 'CityAiphader',
   props:{
@@ -32,11 +34,9 @@ export default {
   methods: {
     handleLetterClick(e){
       this.$emit('change',e.target.innerText)
-
     },
     handleTouchStart(){
       this.touchStatus=true
-      
     },
     handleTouchmove(e){
       if(this.touchStatus){

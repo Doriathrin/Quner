@@ -45,7 +45,12 @@ export default {
     }
   },
   methods: {
-     
+    handldBannerClick() {
+      this.showGallary = true;
+    },
+    handleGallaryClose() {
+      this.showGallary = false;
+    }
   },
  }
 </script>
